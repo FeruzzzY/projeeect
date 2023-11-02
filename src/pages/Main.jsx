@@ -5,6 +5,10 @@ const Main = () => {
   return (
     <div>
       <Header />
+      <Switch>
+        <Route exact path="/" component={Header} />
+        <Route path="/about" component={About} />
+      </Switch>
     </div>
   );
 };
