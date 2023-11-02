@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../components/Global/Header";
+import { Route, Router, Switch } from "react-router-dom";
 
 const Main = () => {
   return (
     <div>
       <Header />
-      <Switch>
+      <Router>
         <Route exact path="/" component={Header} />
-        <Route path="/about" component={About} />
-      </Switch>
+      </Router>
     </div>
   );
 };
